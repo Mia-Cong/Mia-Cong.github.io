@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[Hello World]]></title>
-    <url>%2F2019%2F04%2F06%2Fhello-world%2F</url>
-    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+    <title><![CDATA[Image Harmonization]]></title>
+    <url>%2F2019%2F04%2F06%2FImage-Harmonization%2F</url>
+    <content type="text"><![CDATA[Traditional Harmonization MethodsHistogram Matching CG2Real: Improving the Realism of Computer Generated Images Using a Large Collection of Photographs use co-segmentation to segment and match regions in a single step .the content of all images is taken into account during co-segmentation and matching regions are automatically produced as a byproduct of [1] [1] Cosegmentation of Image Pairs by Histogram Matching- Incorporating a Global Constraint into MRFs mean-shift framework [2] [2] The Estimation of the Gradient of a Density Function, with Applications in Pattern Recognition feature vector: concatenation of the pixel color in L a b* space, the normalized x and y coordinates at p, and a binary indicator vector (i0; . . . ; ik) such that ij is 1 when pixel p is in the jth image and 0 otherwise a combination of joint-bilateral up-sampling and local color transfer related topics alpha matting: Fuse image by combining their absolute pixel values. The color of the image are linearly interpolated using weights specified by the alpha matte. gradient domain compositing image blending Poisson blending image pyramids Laplacian pyramids]]></content>
+      <categories>
+        <category>Paper Note</category>
+      </categories>
+      <tags>
+        <tag>Deep Learning</tag>
+        <tag>Image Harmonization</tag>
+        <tag>GAN</tag>
+      </tags>
   </entry>
 </search>
