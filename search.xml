@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Mount by SSHFS]]></title>
+    <url>%2F2019%2F04%2F07%2FMount-by-SSHFS%2F</url>
+    <content type="text"><![CDATA[SSHFS (SSH Filesystem) is a filesystem client to mount and interact with files located on a remote server or workstation over a normal ssh connection. It’s safer and more convenient than nfs. And it’s helpful especially when we are facing multiple servers and large dataset. Installsudo apt-get install sshfs Mount remote filesystem12$ mkdir ~/remoteshared$ sshfs &lt;user&gt;@&lt;host&gt;:/remotepath ~/remoteshared Uninstallumount ~/remoteshared Tips read: Connection reset by peer 123xxx@xxx-Lenovo:~$ sshfs usrname@172.23.65.122:/home/usrname ./122read: Connection reset by peerxxx@xxx-Lenovo:~$]]></content>
+      <categories>
+        <category>ubuntu</category>
+      </categories>
+      <tags>
+        <tag>ssh</tag>
+        <tag>remote mount</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Image Harmonization]]></title>
     <url>%2F2019%2F04%2F06%2FImage-Harmonization%2F</url>
     <content type="text"><![CDATA[Traditional Harmonization MethodsHistogram Matching CG2Real: Improving the Realism of Computer Generated Images Using a Large Collection of Photographs use co-segmentation to segment and match regions in a single step .the content of all images is taken into account during co-segmentation and matching regions are automatically produced as a byproduct of [1] [1] Cosegmentation of Image Pairs by Histogram Matching- Incorporating a Global Constraint into MRFs mean-shift framework [2] [2] The Estimation of the Gradient of a Density Function, with Applications in Pattern Recognition feature vector: concatenation of the pixel color in L a b* space, the normalized x and y coordinates at p, and a binary indicator vector (i0; . . . ; ik) such that ij is 1 when pixel p is in the jth image and 0 otherwise a combination of joint-bilateral up-sampling and local color transfer related topics alpha matting: Fuse image by combining their absolute pixel values. The color of the image are linearly interpolated using weights specified by the alpha matte. gradient domain compositing image blending Poisson blending image pyramids Laplacian pyramids]]></content>

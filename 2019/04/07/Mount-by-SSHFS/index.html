@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="ssh,remote mount,">
 
 
 
@@ -79,13 +79,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Wenyan Cong">
-<meta property="og:url" content="http://yoursite.com/tags/Image-Harmonization/index.html">
+<meta name="description" content="SSHFS (SSH Filesystem) is a filesystem client to mount and interact with files located on a remote server or workstation over a normal ssh connection. It’s safer and more convenient than nfs. And it’">
+<meta name="keywords" content="ssh,remote mount">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Mount by SSHFS">
+<meta property="og:url" content="http://yoursite.com/2019/04/07/Mount-by-SSHFS/index.html">
 <meta property="og:site_name" content="Wenyan Cong">
+<meta property="og:description" content="SSHFS (SSH Filesystem) is a filesystem client to mount and interact with files located on a remote server or workstation over a normal ssh connection. It’s safer and more convenient than nfs. And it’">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-04-07T13:07:07.697Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Wenyan Cong">
+<meta name="twitter:title" content="Mount by SSHFS">
+<meta name="twitter:description" content="SSHFS (SSH Filesystem) is a filesystem client to mount and interact with files located on a remote server or workstation over a normal ssh connection. It’s safer and more convenient than nfs. And it’">
 
 
 
@@ -115,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/tags/Image-Harmonization/">
+  <link rel="canonical" href="http://yoursite.com/2019/04/07/Mount-by-SSHFS/">
 
 
 
 
 
-  <title>Tag: Image Harmonization | Wenyan Cong</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  <title>Mount by SSHFS | Wenyan Cong</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
   
 
 
@@ -140,7 +145,7 @@
     
   
 
-  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left ">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -266,52 +271,179 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block tag">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>Image Harmonization<small>Tag</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/07/Mount-by-SSHFS/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content>
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Wenyan Cong">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2019/04/06/Image-Harmonization/" itemprop="url">
-              
-                <span itemprop="name">Image Harmonization</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">Mount by SSHFS</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-04-06T13:12:12+08:00" content="2019-04-06">
-          04-06
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-04-07T20:46:22+08:00">
+                2019-04-07
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/ubuntu/" itemprop="url" rel="index">
+                    <span itemprop="name">ubuntu</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p> SSHFS (SSH Filesystem) is a filesystem client to mount and interact with files located on a remote server or workstation over a normal ssh connection. It’s safer and more convenient than <em>nfs</em>. And it’s helpful especially when we are facing multiple servers and large dataset.</p>
+<h3 id="Install"><a href="#Install" class="headerlink" title="Install"></a>Install</h3><p><code>sudo apt-get install sshfs</code></p>
+<h3 id="Mount-remote-filesystem"><a href="#Mount-remote-filesystem" class="headerlink" title="Mount remote filesystem"></a>Mount remote filesystem</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ mkdir ~/remoteshared</span><br><span class="line">$ sshfs &lt;user&gt;@&lt;host&gt;:/remotepath ~/remoteshared</span><br></pre></td></tr></table></figure>
+<h3 id="Uninstall"><a href="#Uninstall" class="headerlink" title="Uninstall"></a>Uninstall</h3><p><code>umount ~/remoteshared</code></p>
+<h3 id="Tips"><a href="#Tips" class="headerlink" title="Tips"></a>Tips</h3><ol>
+<li><p><strong>read: Connection reset by peer</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">xxx@xxx-Lenovo:~$ sshfs usrname@172.23.65.122:/home/usrname ./122</span><br><span class="line">read: Connection reset by peer</span><br><span class="line">xxx@xxx-Lenovo:~$</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
 
       
     </div>
+    
+    
+    
 
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/ssh/" rel="tag"># ssh</a>
+          
+            <a href="/tags/remote-mount/" rel="tag"># remote mount</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/04/06/Image-Harmonization/" rel="next" title="Image Harmonization">
+                <i class="fa fa-chevron-left"></i> Image Harmonization
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -319,6 +451,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -339,8 +475,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -416,6 +561,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Install"><span class="nav-number">1.</span> <span class="nav-text">Install</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Mount-remote-filesystem"><span class="nav-number">2.</span> <span class="nav-text">Mount remote filesystem</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Uninstall"><span class="nav-number">3.</span> <span class="nav-text">Uninstall</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Tips"><span class="nav-number">4.</span> <span class="nav-text">Tips</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -549,6 +710,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
