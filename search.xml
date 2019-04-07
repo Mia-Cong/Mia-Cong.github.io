@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[Mount by SSHFS]]></title>
     <url>%2F2019%2F04%2F07%2FMount-by-SSHFS%2F</url>
-    <content type="text"><![CDATA[SSHFS (SSH Filesystem) is a filesystem client to mount and interact with files located on a remote server or workstation over a normal ssh connection. It’s safer and more convenient than nfs. And it’s helpful especially when we are facing multiple servers and large dataset. Installsudo apt-get install sshfs Mount remote filesystem12$ mkdir ~/remoteshared$ sshfs &lt;user&gt;@&lt;host&gt;:/remotepath ~/remoteshared Uninstallumount ~/remoteshared Tips read: Connection reset by peer 123xxx@xxx-Lenovo:~$ sshfs usrname@172.23.65.122:/home/usrname ./122read: Connection reset by peerxxx@xxx-Lenovo:~$]]></content>
+    <content type="text"><![CDATA[SSHFS (SSH Filesystem) is a filesystem client to mount and interact with files located on a remote server or workstation over a normal ssh connection. It’s safer and more convenient than nfs. And it’s helpful especially when we are facing multiple servers and large dataset. Installsudo apt-get install sshfs Mount remote filesystem12$ mkdir ~/remoteshared$ sshfs &lt;user&gt;@&lt;host&gt;:/remotepath ~/remoteshared Uninstallumount ~/remoteshared Tips read: Connection reset by peer 123xxx@xxx-Lenovo:~$ sudo sshfs yanhd@172.23.65.122:/home/yanhd ./122read: Connection reset by peerxxx@xxx-Lenovo:~$ add the attribute -o allow_other to allow other user to visit these files. sudo sshfs -o allow_other yanhd@172.23.65.122:/home/yanhd ./122]]></content>
       <categories>
         <category>ubuntu</category>
       </categories>

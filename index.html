@@ -380,7 +380,9 @@
 <h3 id="Uninstall"><a href="#Uninstall" class="headerlink" title="Uninstall"></a>Uninstall</h3><p><code>umount ~/remoteshared</code></p>
 <h3 id="Tips"><a href="#Tips" class="headerlink" title="Tips"></a>Tips</h3><ol>
 <li><p><strong>read: Connection reset by peer</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">xxx@xxx-Lenovo:~$ sshfs usrname@172.23.65.122:/home/usrname ./122</span><br><span class="line">read: Connection reset by peer</span><br><span class="line">xxx@xxx-Lenovo:~$</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">xxx@xxx-Lenovo:~$ sudo sshfs yanhd@172.23.65.122:/home/yanhd ./122</span><br><span class="line">read: Connection reset by peer</span><br><span class="line">xxx@xxx-Lenovo:~$</span><br></pre></td></tr></table></figure>
+<p>add  the attribute <code>-o allow_other</code> to allow other user to visit these files.</p>
+<p><code>sudo sshfs -o allow_other yanhd@172.23.65.122:/home/yanhd ./122</code></p>
 </li>
 </ol>
 
