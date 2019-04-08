@@ -281,6 +281,152 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/08/OpenCV-contrib/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content>
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Wenyan Cong">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/04/08/OpenCV-contrib/" itemprop="url">OpenCV contrib</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-04-08T20:05:33+08:00">
+                2019-04-08
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/python/" itemprop="url" rel="index">
+                    <span itemprop="name">python</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>OpenCV Contrib is an extension module of OpenCV and it’s also a superset of general OpenCV.</p>
+<h3 id="1-Uninstall-previous-OpenCV"><a href="#1-Uninstall-previous-OpenCV" class="headerlink" title="1. Uninstall previous OpenCV"></a>1. Uninstall previous OpenCV</h3><p>If you have previously installed OpenCV, uninstall it first. Otherwise the Contrib version will not be correctly recognized after installed.</p>
+<p><code>pip uninstall opencv-python</code></p>
+<h3 id="2-Install-OpenCV-Contrib"><a href="#2-Install-OpenCV-Contrib" class="headerlink" title="2. Install OpenCV Contrib"></a>2. Install OpenCV Contrib</h3><p>Use <code>pip</code> to install pre-compiled Contrib extensions.</p>
+<p><code>pip install opencv-contrib-python</code></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/07/Mount-by-SSHFS/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -375,9 +521,9 @@
         
           
             <p> SSHFS (SSH Filesystem) is a filesystem client to mount and interact with files located on a remote server or workstation over a normal ssh connection. It’s safer and more convenient than <em>nfs</em>. And it’s helpful especially when we are facing multiple servers and large dataset.</p>
-<h3 id="Install"><a href="#Install" class="headerlink" title="Install"></a>Install</h3><p><code>sudo apt-get install sshfs</code></p>
-<h3 id="Mount-remote-filesystem"><a href="#Mount-remote-filesystem" class="headerlink" title="Mount remote filesystem"></a>Mount remote filesystem</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ mkdir ~/remoteshared</span><br><span class="line">$ sshfs &lt;user&gt;@&lt;host&gt;:/remotepath ~/remoteshared</span><br></pre></td></tr></table></figure>
-<h3 id="Uninstall"><a href="#Uninstall" class="headerlink" title="Uninstall"></a>Uninstall</h3><p><code>umount ~/remoteshared</code></p>
+<h3 id="1-Install"><a href="#1-Install" class="headerlink" title="1. Install"></a>1. Install</h3><p><code>sudo apt-get install sshfs</code></p>
+<h3 id="2-Mount-remote-filesystem"><a href="#2-Mount-remote-filesystem" class="headerlink" title="2. Mount remote filesystem"></a>2. Mount remote filesystem</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ mkdir ~/remoteshared</span><br><span class="line">$ sshfs &lt;user&gt;@&lt;host&gt;:/remotepath ~/remoteshared</span><br></pre></td></tr></table></figure>
+<h3 id="3-Uninstall"><a href="#3-Uninstall" class="headerlink" title="3. Uninstall"></a>3. Uninstall</h3><p><code>umount ~/remoteshared</code></p>
 <h3 id="Tips"><a href="#Tips" class="headerlink" title="Tips"></a>Tips</h3><ol>
 <li><p><strong>read: Connection reset by peer</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">xxx@xxx:~$ sudo sshfs yanhd@172.23.65.122:/home/yanhd ./122</span><br><span class="line">read: Connection reset by peer</span><br><span class="line">xxx@xxx:~$</span><br></pre></td></tr></table></figure>
@@ -632,7 +778,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -643,7 +789,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">categories</span>
                 </a>
               </div>
@@ -654,7 +800,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>

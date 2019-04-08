@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="OpenCV,">
 
 
 
@@ -79,14 +79,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="tags">
-<meta property="og:url" content="http://yoursite.com/tags/index.html">
+<meta name="description" content="OpenCV Contrib is an extension module of OpenCV and it’s also a superset of general OpenCV. 1. Uninstall previous OpenCVIf you have previously installed OpenCV, uninstall it first. Otherwise the Contr">
+<meta name="keywords" content="OpenCV">
+<meta property="og:type" content="article">
+<meta property="og:title" content="OpenCV contrib">
+<meta property="og:url" content="http://yoursite.com/2019/04/08/OpenCV-contrib/index.html">
 <meta property="og:site_name" content="Wenyan Cong">
+<meta property="og:description" content="OpenCV Contrib is an extension module of OpenCV and it’s also a superset of general OpenCV. 1. Uninstall previous OpenCVIf you have previously installed OpenCV, uninstall it first. Otherwise the Contr">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-04-06T02:22:03.967Z">
+<meta property="og:updated_time" content="2019-04-08T12:17:15.374Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="tags">
+<meta name="twitter:title" content="OpenCV contrib">
+<meta name="twitter:description" content="OpenCV Contrib is an extension module of OpenCV and it’s also a superset of general OpenCV. 1. Uninstall previous OpenCVIf you have previously installed OpenCV, uninstall it first. Otherwise the Contr">
 
 
 
@@ -116,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/tags/">
+  <link rel="canonical" href="http://yoursite.com/2019/04/08/OpenCV-contrib/">
 
 
 
 
 
-  <title>tags | Wenyan Cong</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  <title>OpenCV contrib | Wenyan Cong</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
   
 
 
@@ -269,40 +273,170 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/08/OpenCV-contrib/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content>
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Wenyan Cong">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">tags</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <div class="tag-cloud">
-            <div class="tag-cloud-title">
-                6 tags in total
-            </div>
-            <div class="tag-cloud-tags">
-              <a href="/tags/Deep-Learning/" style="font-size: 12px; color: #ccc">Deep Learning</a> <a href="/tags/GAN/" style="font-size: 12px; color: #ccc">GAN</a> <a href="/tags/Image-Harmonization/" style="font-size: 12px; color: #ccc">Image Harmonization</a> <a href="/tags/OpenCV/" style="font-size: 12px; color: #ccc">OpenCV</a> <a href="/tags/remote-mount/" style="font-size: 12px; color: #ccc">remote mount</a> <a href="/tags/ssh/" style="font-size: 12px; color: #ccc">ssh</a>
-            </div>
-          </div>
+          <h1 class="post-title" itemprop="name headline">OpenCV contrib</h1>
         
-      </div>
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-04-08T20:05:33+08:00">
+                2019-04-08
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/python/" itemprop="url" rel="index">
+                    <span itemprop="name">python</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <p>OpenCV Contrib is an extension module of OpenCV and it’s also a superset of general OpenCV.</p>
+<h3 id="1-Uninstall-previous-OpenCV"><a href="#1-Uninstall-previous-OpenCV" class="headerlink" title="1. Uninstall previous OpenCV"></a>1. Uninstall previous OpenCV</h3><p>If you have previously installed OpenCV, uninstall it first. Otherwise the Contrib version will not be correctly recognized after installed.</p>
+<p><code>pip uninstall opencv-python</code></p>
+<h3 id="2-Install-OpenCV-Contrib"><a href="#2-Install-OpenCV-Contrib" class="headerlink" title="2. Install OpenCV Contrib"></a>2. Install OpenCV Contrib</h3><p>Use <code>pip</code> to install pre-compiled Contrib extensions.</p>
+<p><code>pip install opencv-contrib-python</code></p>
+
       
     </div>
     
     
     
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/OpenCV/" rel="tag"># OpenCV</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/04/07/Mount-by-SSHFS/" rel="next" title="Mount by SSHFS">
+                <i class="fa fa-chevron-left"></i> Mount by SSHFS
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -311,6 +445,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -331,8 +469,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -408,6 +555,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-Uninstall-previous-OpenCV"><span class="nav-number">1.</span> <span class="nav-text">1. Uninstall previous OpenCV</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-Install-OpenCV-Contrib"><span class="nav-number">2.</span> <span class="nav-text">2. Install OpenCV Contrib</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       

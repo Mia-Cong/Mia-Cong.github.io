@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="Wenyan Cong">
 <meta property="og:description" content="SSHFS (SSH Filesystem) is a filesystem client to mount and interact with files located on a remote server or workstation over a normal ssh connection. It’s safer and more convenient than nfs. And it’">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-04-08T01:23:46.329Z">
+<meta property="og:updated_time" content="2019-04-08T12:17:39.676Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Mount by SSHFS">
 <meta name="twitter:description" content="SSHFS (SSH Filesystem) is a filesystem client to mount and interact with files located on a remote server or workstation over a normal ssh connection. It’s safer and more convenient than nfs. And it’">
@@ -375,9 +375,9 @@
 
       
         <p> SSHFS (SSH Filesystem) is a filesystem client to mount and interact with files located on a remote server or workstation over a normal ssh connection. It’s safer and more convenient than <em>nfs</em>. And it’s helpful especially when we are facing multiple servers and large dataset.</p>
-<h3 id="Install"><a href="#Install" class="headerlink" title="Install"></a>Install</h3><p><code>sudo apt-get install sshfs</code></p>
-<h3 id="Mount-remote-filesystem"><a href="#Mount-remote-filesystem" class="headerlink" title="Mount remote filesystem"></a>Mount remote filesystem</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ mkdir ~/remoteshared</span><br><span class="line">$ sshfs &lt;user&gt;@&lt;host&gt;:/remotepath ~/remoteshared</span><br></pre></td></tr></table></figure>
-<h3 id="Uninstall"><a href="#Uninstall" class="headerlink" title="Uninstall"></a>Uninstall</h3><p><code>umount ~/remoteshared</code></p>
+<h3 id="1-Install"><a href="#1-Install" class="headerlink" title="1. Install"></a>1. Install</h3><p><code>sudo apt-get install sshfs</code></p>
+<h3 id="2-Mount-remote-filesystem"><a href="#2-Mount-remote-filesystem" class="headerlink" title="2. Mount remote filesystem"></a>2. Mount remote filesystem</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ mkdir ~/remoteshared</span><br><span class="line">$ sshfs &lt;user&gt;@&lt;host&gt;:/remotepath ~/remoteshared</span><br></pre></td></tr></table></figure>
+<h3 id="3-Uninstall"><a href="#3-Uninstall" class="headerlink" title="3. Uninstall"></a>3. Uninstall</h3><p><code>umount ~/remoteshared</code></p>
 <h3 id="Tips"><a href="#Tips" class="headerlink" title="Tips"></a>Tips</h3><ol>
 <li><p><strong>read: Connection reset by peer</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">xxx@xxx:~$ sudo sshfs yanhd@172.23.65.122:/home/yanhd ./122</span><br><span class="line">read: Connection reset by peer</span><br><span class="line">xxx@xxx:~$</span><br></pre></td></tr></table></figure>
@@ -425,6 +425,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/04/08/OpenCV-contrib/" rel="prev" title="OpenCV contrib">
+                OpenCV contrib <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -501,7 +505,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -512,7 +516,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">categories</span>
                 </a>
               </div>
@@ -523,7 +527,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
@@ -572,7 +576,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Install"><span class="nav-number">1.</span> <span class="nav-text">Install</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Mount-remote-filesystem"><span class="nav-number">2.</span> <span class="nav-text">Mount remote filesystem</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Uninstall"><span class="nav-number">3.</span> <span class="nav-text">Uninstall</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Tips"><span class="nav-number">4.</span> <span class="nav-text">Tips</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-Install"><span class="nav-number">1.</span> <span class="nav-text">1. Install</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-Mount-remote-filesystem"><span class="nav-number">2.</span> <span class="nav-text">2. Mount remote filesystem</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-Uninstall"><span class="nav-number">3.</span> <span class="nav-text">3. Uninstall</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Tips"><span class="nav-number">4.</span> <span class="nav-text">Tips</span></a></li></ol></div>
             
 
           </div>

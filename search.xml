@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[OpenCV contrib]]></title>
+    <url>%2F2019%2F04%2F08%2FOpenCV-contrib%2F</url>
+    <content type="text"><![CDATA[OpenCV Contrib is an extension module of OpenCV and it’s also a superset of general OpenCV. 1. Uninstall previous OpenCVIf you have previously installed OpenCV, uninstall it first. Otherwise the Contrib version will not be correctly recognized after installed. pip uninstall opencv-python 2. Install OpenCV ContribUse pip to install pre-compiled Contrib extensions. pip install opencv-contrib-python]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>OpenCV</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Mount by SSHFS]]></title>
     <url>%2F2019%2F04%2F07%2FMount-by-SSHFS%2F</url>
-    <content type="text"><![CDATA[SSHFS (SSH Filesystem) is a filesystem client to mount and interact with files located on a remote server or workstation over a normal ssh connection. It’s safer and more convenient than nfs. And it’s helpful especially when we are facing multiple servers and large dataset. Installsudo apt-get install sshfs Mount remote filesystem12$ mkdir ~/remoteshared$ sshfs &lt;user&gt;@&lt;host&gt;:/remotepath ~/remoteshared Uninstallumount ~/remoteshared Tips read: Connection reset by peer 123xxx@xxx:~$ sudo sshfs yanhd@172.23.65.122:/home/yanhd ./122read: Connection reset by peerxxx@xxx:~$ Use the ssh port -p &lt;portnumber&gt;. Check whether the ssh works. If ssh works, sshfs will work.]]></content>
+    <content type="text"><![CDATA[SSHFS (SSH Filesystem) is a filesystem client to mount and interact with files located on a remote server or workstation over a normal ssh connection. It’s safer and more convenient than nfs. And it’s helpful especially when we are facing multiple servers and large dataset. 1. Installsudo apt-get install sshfs 2. Mount remote filesystem12$ mkdir ~/remoteshared$ sshfs &lt;user&gt;@&lt;host&gt;:/remotepath ~/remoteshared 3. Uninstallumount ~/remoteshared Tips read: Connection reset by peer 123xxx@xxx:~$ sudo sshfs yanhd@172.23.65.122:/home/yanhd ./122read: Connection reset by peerxxx@xxx:~$ Use the ssh port -p &lt;portnumber&gt;. Check whether the ssh works. If ssh works, sshfs will work.]]></content>
       <categories>
         <category>ubuntu</category>
       </categories>
