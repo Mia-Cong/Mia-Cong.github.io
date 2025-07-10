@@ -1,2454 +1,441 @@
 <!DOCTYPE html>
-
-
-
-  
-
-
-<html class="theme-next muse use-motion" lang>
-<head><meta name="generator" content="Hexo 3.8.0">
-  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="theme-color" content="#222">
-
-
-
-
-
-
-
-
-
-<meta http-equiv="Cache-Control" content="no-transform">
-<meta http-equiv="Cache-Control" content="no-siteapp">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
-
-
-
-
-
-
-
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
-
-<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
-
-
-  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
-
-
-
-
-
-  <meta name="keywords" content="Hexo, NexT">
-
-
-
-
-
-
-
-
-
-
-<meta property="og:type" content="website">
-<meta property="og:title" content="Wenyan Cong">
-<meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="Wenyan Cong">
-<meta property="og:locale" content="default">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Wenyan Cong">
-
-
-
-<script type="text/javascript" id="hexo.configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    root: '/',
-    scheme: 'Muse',
-    version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
-    fancybox: true,
-    tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    duoshuo: {
-      userId: '0',
-      author: 'Author'
-    },
-    algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    }
-  };
-</script>
-
-
-
-  <link rel="canonical" href="http://yoursite.com/">
-
-
-
-
-
-  <title>Wenyan Cong</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
-  
-
-
-
-
+<!-- saved from url=(0017)https://xzhou.me/ -->
+<html lang="en">
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><!--<base target="_blank">-->
+    <base href="." target="_blank">
+    <link rel="preconnect" href="https://fonts.gstatic.com/">
+    <link rel="stylesheet" type="text/css" data-href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <meta name="viewport" content="width=device-width">
+    <title>Wenyan Cong's Homepage</title>
+    <link rel="icon" href="/images/sky_icon.jpeg" type="image/jpg">
+    <meta name="description"
+        content="I am a Ph.D. student in Electrical Computer Engineering at The University of Texas at Austin">
+    <meta name="next-head-count" content="4">
+    <link rel="preload" href="./Homepage_files/body.css" as="style">
+    <link rel="stylesheet" href="./Homepage_files/body.css" data-n-g="">
+    <link rel="preload" href="./Homepage_files/pub.css" as="style">
+    <link rel="stylesheet" href="./Homepage_files/pub.css" data-n-p=""><noscript data-n-css=""></noscript>
+
+    <style>
+        body {
+            font-family: Palatino, sans-serif;
+            font-size: 18px;
+        }
+    </style>
+
+    <style>
+        a {
+            /* color: #305b81; */
+            color: #176a9d;
+            text-decoration: none;
+        }
+
+        a:hover {
+            /* color:rgb(197, 139, 92); */
+            color: rgb(106, 0, 95);
+            /* color: #B01C33; */
+        }
+
+        heading {
+            font-size: 22px;
+        }
+
+        papertitle {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        name {
+            font-size: 30px;
+            line-height: 130%;
+        }
+
+        note {
+            color: #080808a6;
+            font-size: 13px;
+        }
+
+        highlight {
+            /* color:	#B01C33; */
+            /* color: #305b81; */
+            color: #176a9d;
+        }
+
+        .personal_chineseName__image {
+            max-width: 100%;
+            /* Ensures it doesn't overflow */
+            height: auto;
+            display: block;
+            margin: 5px auto;
+        }
+
+        /* Match h3 size */
+        .personal_chineseName__image {
+            max-height: 1.8em;
+            /* Keeps it similar to h3 font size */
+        }
+
+        h2 {
+            font-size: 26px;
+            /* Reduce from default size */
+            font-weight: bold;
+            margin-bottom: 14px;
+            /* Adjust spacing */
+        }
+
+        /* Reduce the gap between paragraphs inside the table */
+        .edu-info p {
+            margin: 1px 0;
+            /* Adjusts spacing between paragraphs */
+        }
+
+        .name-highlight {
+            font-weight: bold;
+            /* Makes it bold */
+            /* color: #DAA520; */
+            /* Gold color */
+            /* background-color: rgba(218, 165, 32, 0.15); */
+            /* Light gold background */
+            /* padding: 2px 5px; */
+            /* Adds some spacing */
+            /* border-radius: 5px; */
+            /* Soft rounded corners */
+        }
+
+        #cat-gallery {
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 15px;
+        }
+
+        .gallery figure {
+            margin: 0;
+            width: 200px;
+            /* Adjust the width as needed */
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            /* Optional: add some rounded corners */
+        }
+
+        .gallery figcaption {
+            margin-top: 8px;
+            font-size: 16px;
+            color: #333;
+        }
+        .affiliation-logos {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+    </style>
 
 
 
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="default">
 
-  
-  
-    
-  
+<body>
+    <div id="__next">
+        <div class="styles_container__1_WuM">
+            <section>
+                <div class="personal_profile__BdQI4"><img class="personal_portrait__BAkO0" src="./images/wenyan.jpeg"
+                        alt="pottrait">
+                    <div class="personal_profileInfo__1Y4pW">
+                        <h2 class="personal_name__1_mHK">Wenyan Cong</span></h2>
+                        <!-- <h3 class="personal_chineseName__18aOD">朱汉卿</h3> -->
+                        <!-- <img class="personal_chineseName__image" src="./images/hanqing_chinese_name_v2.png"
+                            alt="Chinese Name"> -->
+                        <h3 class="personal_worksFor__2L0De">University of Texas at Austin</h3>
+                        <p style="text-align:center">
+                            <a href="mailto:wycong@utexas.edu">Email</a> &nbsp;/&nbsp;
+                            <a href="https://scholar.google.com/citations?hl=zh-CN&user=uQV5aCsAAAAJ"> Google Scholar
+                            </a> &nbsp;/&nbsp;
+                            <a href="https://github.com/Mia-Cong"> Github </a> &nbsp;/&nbsp;
+                            <a href="docs/CV_WYC_2025.pdf"> CV </a> &nbsp;/&nbsp;
+                            <a href="www.linkedin.com/in/wenyan-cong-97671a291"> Linkedin </a> &nbsp;/&nbsp;
+                            <a href="https://x.com/CongWenyan0320"> Twitter </a>
+                            </p>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2>About Me</h2>
+                <div>
+                    <p>I am a third-year Ph.D. student in Electrical Computer Engineering at <a
+                            href="https://www.utexas.edu/">University of Texas at Austin</a>, under the
+                        supervision of Prof. <a href="https://www.ece.utexas.edu/people/faculty/atlas-wang">Atlas Wang</a>.                     
+                        I received the B.Eng. and M.S. degree (advised by Prof. <a href="https://www.ustcnewly.com/">Li Niu</a> and Prof. <a href="https://bcmi.sjtu.edu.cn/~zhangliqing/">Liqing Zhang</a>) in Computer Science and Technology from <a href="https://en.sjtu.edu.cn/">Shanghai Jiao Tong
+                            University</a>, in 2019 and 2022, respectively. 
+                    </p>
+                    <p>
+                        I was a research intern at Meta Fair with <a href="https://sites.google.com/view/weiyaowang/home">Weiyao Wang</a>, <a href="https://www.linkedin.com/in/matt-feiszli-76b34b/">Matt Feiszli</a>, at Snap Research with <a href="https://jianwang-cmu.github.io/">Jian Wang</a>.
+                    </p>
+                    <p>
+                        I received MLSys'25 <a
+                            href="https://mlsys.org/virtual/2025/awards_detail"> Outstanding Paper Award (Honorable
+                            Mention)</a>, CVPR'25 AI4CC Workshop <a
+                            href="https://ai4cc.net/"> Best Paper Award</a>.
+                    </p>
 
-  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left 
-  page-home">
-    <div class="headband"></div>
+                </div>
+            </section>
 
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta ">
-    
+            <section>
+                <h2>Recent Updates</h2>
+                <li>
+                    <span>Our abstract paper of VideoLifter received the <a
+                            href="https://ai4cc.net/">Best Paper Award
+                            </a> at CVPR'25 AI4CC Workshop. </span>
+                </li>
+                <li>
+                    <span>I joined Adobe as Research
+                        Scientist Intern this summer!</span>
+                </li>
+                <li>
+                    <span>We are organizing <a href="https://e2e3d.github.io/">End-to-End 3D Learning workshop</a> at ICCV'25! See you in Hawaii.</span>
+                </li>
+                <li>
+                    <span>Our APOLLO received the <a
+                            href="https://mlsys.org/virtual/2025/awards_detail">Outstanding Paper Award
+                            (Honorable Mention)</a> at MLSys'25. </span>
+                </li>
+            </section>
 
-    <div class="custom-logo-site-title">
-      <a href="/" class="brand" rel="start">
-        <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Wenyan Cong</span>
-        <span class="logo-line-after"><i></i></span>
-      </a>
-    </div>
-      
-        <p class="site-subtitle"></p>
-      
-  </div>
+            <section>
+                <h2>Research Interests</h2>
+                <div>
+                    <p>
+                        My research interests mainly lie in <span style="color:#FF8C00;">dynamic and complex worlds modeling</span>, including digitalizing the real world and generating a controllable synthetic world. I'm also interested in <span style="color:#FF8C00;">efficient AI algorithems</span>, including both efficient training and efficient inference of large foundation models.
+                    </p>
+                    </ul>
+                    </p>
+                </div>
+            </section>
 
-  <div class="site-nav-toggle">
-    <button>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-    </button>
-  </div>
-</div>
+            <section>
+                <div class="affiliation-logos">
+                <!-- <div style="display: flex; justify-content: center; gap: 50px; flex-wrap: wrap; align-items: center;"> -->
+                    <img src="images/adobe_icon.png" alt="Adobe" style="width: auto; max-height: 100px;">
+                    <img src="images/facebookai_logo.png" alt="Meta" style="width: auto; max-height: 70px;">
+                    <img src="images/snap_icon.png" alt="Snapchat" style="width: auto; max-height: 100px;">
+                    <img src="images/ut_logo.png" alt="UT Austin" style="width: auto; max-height: 100px;">
+                    <img src="images/Sjtu-logo.png" alt="SJTU" style="width: auto; max-height: 100px;">
+                </div>
 
-<nav class="site-nav">
-  
-
-  
-    <ul id="menu" class="menu">
-      
-        
-        <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
-            
-            Home
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-tags">
-          <a href="/tags/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
-            
-            Tags
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-categories">
-          <a href="/categories/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
-            
-            Categories
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-archives">
-          <a href="/archives/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
-            
-            Archives
-          </a>
-        </li>
-      
-
-      
-        <li class="menu-item menu-item-search">
-          
-            <a href="javascript:;" class="popup-trigger">
-          
-            
-              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
-            
-            Search
-          </a>
-        </li>
-      
-    </ul>
-  
-
-  
-    <div class="site-search">
-      
-  <div class="popup search-popup local-search-popup">
-  <div class="local-search-header clearfix">
-    <span class="search-icon">
-      <i class="fa fa-search"></i>
-    </span>
-    <span class="popup-btn-close">
-      <i class="fa fa-times-circle"></i>
-    </span>
-    <div class="local-search-input-wrapper">
-      <input autocomplete="off" placeholder="Searching..." spellcheck="false" type="text" id="local-search-input">
-    </div>
-  </div>
-  <div id="local-search-result"></div>
-</div>
+            </section>
 
 
+            <section>
+                <h2>Selected Publications<br class="publication-list_mobileBreak__24vsO"><span
+                        class="publication-list_filters__3ikvu"><span>Full publication list at </span><span><a
+                                href="https://scholar.google.com/citations?hl=zh-CN&user=uQV5aCsAAAAJ&view_op=list_works&sortby=pubdate">Google
+                                Scholar</a></span></span></h2>
+                <div>
+                    
+                    <div class="publication_publication__1Icb_">
+                        <div class="publication_info__kLRGP">
+                            <div class="publication_title__3m6SE">E3D-Bench: A Benchmark for End-to-End 3D Geometric Foundation Models</div>
+                            <div class="publication_authors__qkFXc"><span><span class="name-highlight">Wenyan Cong</span>, Yiqing Liang, Yancheng Zhang, 
+                                Ziyi Yang, Yan Wang, Boris Ivanovic, Marco Pavone, Chen Chen, Zhangyang Wang, Zhiwen Fan</span></div>
+                            <div class="publication_venue__1Dv6R"><span>In Submission</span></div>
+                            <div class="publication_links__aEpO_"><span class="publication_link__fXY43"><a
+                                        href="https://arxiv.org/abs/2506.01933">Paper</a></span><span
+                                    class="publication_link__fXY43"><a
+                                        href="https://e3dbench.github.io/">Project</a></span><span
+                                    class="publication_link__fXY43"><a
+                                        href="https://github.com/VITA-Group/E3D-Bench">Code</a></span>
+                            </div>
+                        </div>
+                    </div>
 
-    </div>
-  
-</nav>
+                    <div class="publication_publication__1Icb_">
+                        <div class="publication_info__kLRGP">
+                            <div class="publication_title__3m6SE">Can Scaling Test-Time Compute Improve World Foundation Model?</div>
+                            <div class="publication_authors__qkFXc"><span><span class="name-highlight">Wenyan Cong</span>*, Hanqing Zhu*, Peihao Wang,
+                                Bangya Liu, Dejia Xu, Kevin Wang, David Z. Pan, Yan Wang, Zhiwen Fan, Zhangyang Wang</span></div>
+                            <div class="publication_venue__1Dv6R"><span>COLM 2025</span></div>
+                            <div class="publication_links__aEpO_"><span class="publication_link__fXY43"><a
+                                        href="https://arxiv.org/abs/2503.24320">Paper</a></span><span
+                                    class="publication_link__fXY43"><a
+                                        href="https://scalingwfm.github.io/">Project</a></span><span
+                                    class="publication_link__fXY43"><a
+                                        href="https://github.com/Mia-Cong/SWIFT">Code</a></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="publication_publication__1Icb_">
+                        <div class="publication_info__kLRGP">
+                            <div class="publication_title__3m6SE">Videolifter: Lifting videos to 3d with fast hierarchical stereo alignment</div>
+                            <div class="publication_authors__qkFXc"><span><span class="name-highlight">Wenyan Cong</span>, Hanqing Zhu, Kevin Wang, 
+                                Jiahui Lei, Colton Stearns, Yuanhao Cai, Dilin Wang, Rakesh Ranjan, Matt Feiszli, Leonidas Guibas, Zhangyang Wang, Weiyao Wang, Zhiwen Fan</span></div>
+                            <div class="publication_venue__1Dv6R"><span>AI4CC CVPRW 🏆 Best Paper Award (Abstract paper). In Submission</span></div>
+                            <div class="publication_links__aEpO_"><span class="publication_link__fXY43"><a
+                                        href="https://arxiv.org/abs/2501.01949?">Paper</a></span><span
+                                    class="publication_link__fXY43"><a
+                                        href="https://videolifter.github.io/">Project</a></span><span
+                                    class="publication_link__fXY43"><a
+                                        href="https://github.com/VITA-Group/VideoLifter">Code</a></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="publication_publication__1Icb_">
+                        <div class="publication_info__kLRGP">
+                            <div class="publication_title__3m6SE">APOLLO: SGD-like Memory, AdamW-level Performance
+                            </div>
+                            <div class="publication_authors__qkFXc"><span>Hanqing
+                                        Zhu*, Zhenyu Zhang*, <span class="name-highlight">Wenyan Cong</span>,
+                                    Xi
+                                    Liu, Sem Park, Vikas Chandra, Bo Long, David Z Pan, Zhangyang Wang, Jinwon Lee
+                                </span></div>
+                            <div class="publication_venue__1Dv6R"><span>MLSys 2025 🏆 Outstanding Paper Honorable
+                                    Mention Award</span><span <a href="https://github.com/zhuhanqing/APOLLO"
+                                    target="_blank">
+                                    <img src="https://img.shields.io/github/stars/zhuhanqing/APOLLO?style=social"
+                                        alt="GitHub stars">
+                                    </a>
+                                </span><span></span>&nbsp;</div>
+                            <div class="publication_links__aEpO_">
+                                <span class="publication_link__fXY43"><a
+                                        href="https://arxiv.org/abs/2412.05270">Paper</a>
+                                </span>
+                                <span class="publication_link__fXY43"><a
+                                        href="https://zhuhanqing.github.io/APOLLO/">Project</a>
+                                </span>
+                                <span class="publication_link__fXY43"><a
+                                        href="https://github.com/zhuhanqing/APOLLO/tree/main">Code</a>
+                                </span>
+                                <span class="publication_link__fXY43"><a
+                                        href="https://www.youtube.com/playlist?list=PLE0M__TDnJIhvUYG1KRCfzC6gDjt0LV6T">Video</a>
+                                </span>
+                                <span class="publication_link__fXY43"><a
+                                        href="https://github.com/huggingface/transformers/pull/36062">Hugging Face
+                                        Transformer</a>
+                                </span>
+                            </div>
+                            <div class="publication_links__aEpO_">
+                                <span class="publication_link__fXY43"><a
+                                        href="https://github.com/hiyouga/LLaMA-Factory/pull/6617">LLaMA-Factory</a>
+                                </span>
+                                <span class="publication_link__fXY43"><a
+                                        href="https://github.com/FluxML/Optimisers.jl/pull/196">FluxML</a>
+                                </span>
+                                <span class="publication_link__fXY43"><a
+                                        href="https://news.ycombinator.com/item?id=42473469">Hacker News</a>
+                                </span>
+                                <span class="publication_link__fXY43"><a
+                                        href="https://zhuanlan.zhihu.com/p/26780519812">机器之心</a>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- <div class="publication_image__1EUuC"><img
+                                src="https://raw.githubusercontent.com/zhuhanqing/APOLLO/main/docs/static/videos/apollo_demo.gif"
+                                title="Large Spatial Model video loading.." playsinline="" autoplay="" loop=""
+                                preload="" muted=""></img></div> -->
+                    </div>
+
+
+                    <div class="publication_publication__1Icb_">
+                        <div class="publication_info__kLRGP">
+                            <div class="publication_title__3m6SE">Large spatial model: End-to-end unposed images to semantic 3d</div>
+                            <div class="publication_authors__qkFXc"><span>Zhiwen Fan, Jian Zhang, <span class="name-highlight">Wenyan Cong</span>, Peihao Wang, Renjie Li, Kairun Wen, 
+                                Shijie Zhou, Achuta Kadambi, Zhangyang Wang, Danfei Xu, Boris Ivanovic, Marco Pavone, Yue Wang</span></div>
+                            <div class="publication_venue__1Dv6R"><span>NeurIPS 2024</span></div>
+                            <div class="publication_links__aEpO_"><span class="publication_link__fXY43"><a
+                                        href="https://proceedings.neurips.cc/paper_files/paper/2024/file/46fd43174b82660f24e3ba11cf5e1340-Paper-Conference.pdf">Paper</a></span><span
+                                    class="publication_link__fXY43"><a
+                                        href="https://largespatialmodel.github.io/">Project</a></span><span
+                                    class="publication_link__fXY43"><a
+                                        href="https://github.com/NVlabs/LSM">Code</a></span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="publication_publication__1Icb_">
+
+                        <div class="publication_info__kLRGP">
+                            <div class="publication_title__3m6SE">PACE: Pacing Operator Learning to Accurate Optical
+                                Field Simulation for Complicated Photonic Devices</div>
+                            <div class="publication_authors__qkFXc"><span>Hanqing
+                                        Zhu, <span class="name-highlight">Wenyan Cong</span>, Guojin Chen,
+                                    Shupeng
+                                    Ning, Ray T Chen, Jiaqi Gu, David Z Pan</span></div>
+                            <div class="publication_venue__1Dv6R"><span>NeurIPS 2024</span><span
+                                    class="publication_highlights__2ILmf"></span>&nbsp;&nbsp;</div>
+                            <div class="publication_links__aEpO_"><span class="publication_link__fXY43"><a
+                                        href="https://arxiv.org/pdf/2411.03527">Paper</a></span><span
+                                    class="publication_link__fXY43"><a
+                                        href="https://github.com/zhuhanqing/PACE-Light">Code</a></span></div>
+                        </div>
+                        <!-- <div class="publication_image__1EUuC"><video
+                                src="./Homepage_files/videos/garden_lighgaussian.mp4"
+                                title="LightGaussian video loading.." playsinline="" autoplay="" loop="" preload=""
+                                muted=""></video></div> -->
+                    </div>
+
+                    
+
+                    <div class="publication_publication__1Icb_">
+                        <div class="publication_info__kLRGP">
+                            <div class="publication_title__3m6SE">InstantSplat: Sparse-view SfM-free Gaussian Splatting in Seconds</div>
+                            <div class="publication_authors__qkFXc"><span>Zhiwen Fan*, <span class="name-highlight">Wenyan Cong</span>*, Kairun Wen*, Kevin Wang, Jian Zhang, Xinghao Ding, Danfei Xu, 
+                                        Boris Ivanovic, Marco Pavone, Georgios Pavlakos, Zhangyang Wang, Yue Wang
+                                </span></div>
+                            <div class="publication_venue__1Dv6R"><span>In Submission</span><span></span>&nbsp;</div>
+                            <div class="publication_links__aEpO_"><span class="publication_link__fXY43"><a
+                                        href="https://arxiv.org/abs/2403.20309">Paper</a></span><span
+                                    class="publication_link__fXY43"><a
+                                        href="https://instantsplat.github.io/">Project</a></span><span
+                                    class="publication_link__fXY43"><a
+                                        href="https://github.com/NVlabs/InstantSplat">Code</a></span>
+                            </div>
+                        </div>
+                        <!-- <div class="publication_image__1EUuC"><video src="./Homepage_files/videos/eva.mp4"
+                                title="Large Spatial Model video loading.." playsinline="" autoplay="" loop=""
+                                preload="" muted=""></video></div> -->
+                    </div>
 
 
 
- </div>
-    </header>
-
-    <main id="main" class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          <div id="content" class="content">
-            
-  <section id="posts" class="posts-expand">
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/25/DailyReading-20200525/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content>
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Wenyan Cong">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/05/25/DailyReading-20200525/" itemprop="url">Daily Reading 20200525</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-05-25T20:46:22+08:00">
-                2019-05-25
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Paper-Note/" itemprop="url" rel="index">
-                    <span itemprop="name">Paper Note</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+            </section>  
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="Image-to-image-translation-for-cross-domain-disentanglement"><a href="#Image-to-image-translation-for-cross-domain-disentanglement" class="headerlink" title="Image-to-image translation for cross-domain disentanglement"></a>Image-to-image translation for cross-domain disentanglement</h3><p>posted on: NIPS2018</p>
-<p>In this paper, they combine image translation and domain disentanglement and propose the concept of cross domain disentanglement. Similarly, they separate the latent representation into shared and exclusive parts. The shared part contains information for both domains and the exclusive part contains only factors of variation particular to each domain. Their network contains image translation modules and cross-domain auto-encoders. Image translation modules follow an encoder-decoder architecture. </p>
-<p>l Given input image, the encoder output the latent representation, which is further separated into shared S and exclusive parts E. To guarantee the correct disentanglement, they apply two ways. 1) Based on the intuition that reconstructing Y images from Ex is impossible, they introduce a small decoder and apply GRL at the beginning layers. With adversarial learning, it forces Ex to contain exclusive features only. 2) to constrain the shared features contains similar information, they apply L1 loss on these features and add noise to avoid small signals. </p>
-<p>l During disentangling, as higher resolution feature contains both shared and exclusive features, they reduce the bottleneck by increasing the size of the latent representation when encoding shared part and normally apply fully connected layers for exclusive part.</p>
-<p>l The decoder takes the shared representation and a random noise which serves as the exclusive part as input. To enforce the exclusive features and noises have similar distribution, they adopt a discriminator to push distribution of Ex to N(0,1). And to avoid the noise being ignored, they propose to reconstruct the latent representation using a L1 loss.</p>
-<p>Cross-domain auto-encoder takes the exchanged shared part and the exclusive part as input and reconstruct the original image by using a L1 loss. This offers an extra incentive for the encoder to put domain specific properties in exclusive representation.</p>
-<p>Their experiment is conducted mainly on MNIST variations. 1) Without any labels, their model could generate diverse outputs which belongs to the other domain. 2) Given a reference of the other domain, it could also perform domain-specific translation by exchanging the exclusive parts. 3) By interpolating the exclusive and shared representations, it could generate smoothly transformed images. 4) By applying Euclidean distance between features, it could perform cross domain retrieval both semantically and stylistically. All experiments demonstrate the effectiveness of their cross-domain disentanglement.</p>
-<h4 id="Pros"><a href="#Pros" class="headerlink" title="Pros:"></a>Pros:</h4><ol>
-<li><p>Though their model is trained on simple dataset MNIST variations, it could be applied to bidirectional multimodal image translation in more complex datasets.</p>
-</li>
-<li><p>It’s not constrained to cross-domain spatial correspondence like pix2pix and BicycleGAN do. Their disentanglement is general and practical.</p>
-</li>
-</ol>
-<h4 id="Cons"><a href="#Cons" class="headerlink" title="Cons:"></a>Cons:</h4><ol>
-<li>Though the application of GRL is novel in domain disentanglement, the results in their ablation study indicates that it’s not as useful as they analyzed. </li>
-</ol>
-
-          
-        
-      
     </div>
-    
-    
-    
 
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/22/DailyReading-20200522/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content>
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Wenyan Cong">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/05/22/DailyReading-20200522/" itemprop="url">Daily Reading 20200522</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-05-22T20:46:22+08:00">
-                2019-05-22
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Paper-Note/" itemprop="url" rel="index">
-                    <span itemprop="name">Paper Note</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="Shapes-and-Context-In-the-Wild-Image-Synthesis-amp-Manipulation"><a href="#Shapes-and-Context-In-the-Wild-Image-Synthesis-amp-Manipulation" class="headerlink" title="Shapes and Context: In-the-Wild Image Synthesis &amp; Manipulation"></a>Shapes and Context: In-the-Wild Image Synthesis &amp; Manipulation</h3><p>posted on: CVPR2019</p>
-<p>In image synthesis and image manipulation field, recent works are mainly learning-based parametric methods. In this paper, they propose a data-driven model with no learning for interactively synthesizing in-the-wild images from semantic label input masks. Their model is controllable and interpretable, following stages as: (1) global scene context, filter the list of training examples using labels and pixel overlap of labels; (2) instance shape consistency, search boundaries and extract the shapes with similar context; (3) local part consistency, a more fine-grain constrain when global shape is not able to capture, (4) pixel-level consistency, similar to part consistency, fill the remaining holes after (2) and (3).</p>
-<p>In their quantitative comparison, they measure image realism by applying FID scores and measure image quality by comparing the segmentation outputs between synthesized image and the original. Compared with pix2pix and pix2pix-HD, their method could generate both high-quality and realistic images. In their qualitative comparison，the user study indicates that their results are more favorable than pix2pix. And it could generate diverse outputs without additional efforts. </p>
-<h4 id="Pros"><a href="#Pros" class="headerlink" title="Pros:"></a>Pros:</h4><ol>
-<li>Compared to other parametric methods, their work has notable advantages: 1) it is not limited to specific training data dataset and distribution, 2) it performs better with more given data, while parametric methods will perform worse, 3) it could generate arbitrarily high-resolution images, 4) it can generate an exponentially large set of viable synthesized images. 5) it’s highly controllable and interpretable.</li>
-</ol>
-<h4 id="Cons"><a href="#Cons" class="headerlink" title="Cons:"></a>Cons:</h4><ol>
-<li>The synthesized images has a good structure and semantic consistency, but the appearance of different instances is not consistent, making it visual unpleasant.</li>
-</ol>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/21/DailyReading-20200521/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content>
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Wenyan Cong">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/05/21/DailyReading-20200521/" itemprop="url">Daily Reading 20200521</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-05-21T20:46:22+08:00">
-                2019-05-21
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Paper-Note/" itemprop="url" rel="index">
-                    <span itemprop="name">Paper Note</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="GeneGAN-Learning-Object-Transfiguration-and-Attribute-Subspace-from-Unpaired-Data"><a href="#GeneGAN-Learning-Object-Transfiguration-and-Attribute-Subspace-from-Unpaired-Data" class="headerlink" title="GeneGAN: Learning Object Transfiguration and Attribute Subspace from Unpaired Data"></a>GeneGAN: Learning Object Transfiguration and Attribute Subspace from Unpaired Data</h3><p>posted on: BMVC2017</p>
-<p>GeneGAN proposed a deterministic generative model which learns disentangled attribute subspaces from weakly labeled data by adversarial training. Fed with two unpaired sets of images (with and without object), GeneGAN uses an Encoder to encode image into two parts: object attribute subspace and background subspace. The object attribute may be eyeglasses, smile, hairstyle and lighting condition. By swapping the object feature input of Decoder, GeneGAN could generate different styles of the same person, such as a person with smile to without smile. Besides reconstruction loss and normal adversarial loss, they also present nulling loss to disentangle object features from background features and the parallelogram loss to enforce a constraint between the children object and the parent objects in image pixel values. Their experiments are conducted on aligned faces.</p>
-<h4 id="Pros"><a href="#Pros" class="headerlink" title="Pros:"></a>Pros:</h4><ol>
-<li><p>Compared with CycleGAN, GeneGAN is simpler with only one generator and one discriminator and gains a good performance on face attribute transfiguration in face images from CelebA and Multi-PIE database.</p>
-</li>
-<li><p>The way to learn from weakly labeled unpaired data is inspiring. Two unpaired sets of images that with and without some object is effectively a 0/1 labeling over all training data.</p>
-</li>
-</ol>
-<h4 id="Cons"><a href="#Cons" class="headerlink" title="Cons:"></a>Cons:</h4><ol>
-<li><p>The constraints they presented hold only approximately and there will be potential leakage of information between the object and feature parts. </p>
-</li>
-<li><p>The object feature is not clearly defined. For eyeglasses, it can be the color, type, size, etc. While for hairstyle, it mainly focuses on the hair directions instead of any color information. Maybe it’s following the previous works and I’m wondering.</p>
-</li>
-</ol>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/20/DailyReading-20200520/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content>
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Wenyan Cong">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/05/20/DailyReading-20200520/" itemprop="url">Daily Reading 20200520</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-05-20T20:46:22+08:00">
-                2019-05-20
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Paper-Note/" itemprop="url" rel="index">
-                    <span itemprop="name">Paper Note</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="DRIT-Diverse-Image-to-Image-Translation-via-Disentangled-Representations"><a href="#DRIT-Diverse-Image-to-Image-Translation-via-Disentangled-Representations" class="headerlink" title="DRIT++: Diverse Image-to-Image Translation via Disentangled Representations"></a>DRIT++: Diverse Image-to-Image Translation via Disentangled Representations</h3><p>posted on: ECCV2018</p>
-<p>This paper is somewhat like MUNIT, which treat image translation as a one-to-many multimodal mapping with unpaired data. To generate diverse outputs with unpaired training data, they propose a disentangled representation framework for learning, where the input images are embedded onto two spaces: a domain-invariant content space capturing shared information across domains and a domain-specific attribute space.</p>
-<p>1) To achieve representation disentanglement, they apply two strategies: weight-sharing and a content discriminator. Weight-sharing, similar to UNIT, shares the weight between the last layer of content encoders and the first layer of generators. To further constrain the same content representations encode the same information for both domains, they propose a content discriminator and content adversarial loss, D_c distinguishes the membership of content features while the content decoders try to fool Dc. </p>
-<p>2) To address unpair training data, they propose a cross-cycle consistency, which contains two I2I translation: forward and backward translations. In a word, they exchange the attribute representation twice, trying to reconstruct the original images. </p>
-<p>There are some other loss functions. 1) self-reconstruction loss, reconstruct the original image by encoding and decoding. 2) domain-adversarial loss, encourages G to generate realistic images in each domain. 3) latent regression loss, inspired by BicycleGAN, enforces the reconstruction on the latent attribute vector. 4) KL loss, aim to align the attribute representation with a prior Gaussian distribution 5) mode seeking regularization, improve the diversity. </p>
-<p>For metrics, they adopt FID to evaluate the image quality, LPIPS to evaluate diversity and JSD&amp;NDB to measure the similarity between the distributions of real images and generated images. Their model could generalize to multi-domain and high-resolution I2I translations. </p>
-<h4 id="Pros"><a href="#Pros" class="headerlink" title="Pros:"></a>Pros:</h4><ol>
-<li><p>Though embedding images to content and attribute space is similar to MUNIT, their content adversarial loss guarantees the content space containing no domain-specific information to utmost degree, which is more reasonable than MUNIT.</p>
-</li>
-<li><p>The cross-cycle consistency loss addresses the absence of paired training data in a cyclic way.</p>
-</li>
-<li><p>Their experiments are comprehensive and convincing.</p>
-</li>
-</ol>
-<h4 id="Cons"><a href="#Cons" class="headerlink" title="Cons:"></a>Cons:</h4><ol>
-<li>In their user study, there is no detail information about the number of users or the testing images, which is less convincing. And the image quality is much worse than CycleGAN.</li>
-</ol>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/19/DailyReading-20200519/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content>
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Wenyan Cong">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/05/19/DailyReading-20200519/" itemprop="url">Daily Reading 20200519</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-05-19T20:46:22+08:00">
-                2019-05-19
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Paper-Note/" itemprop="url" rel="index">
-                    <span itemprop="name">Paper Note</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="Multimodal-Unsupervised-Image-to-Image-Translation"><a href="#Multimodal-Unsupervised-Image-to-Image-Translation" class="headerlink" title="Multimodal Unsupervised Image-to-Image Translation"></a>Multimodal Unsupervised Image-to-Image Translation</h3><p>posted on: CVPR2019</p>
-<p>In this paper, they try to solve image completion in a pluralistic way. That is, given a masked input, the model could generate multiple and diverse plausible outputs, which is quite different to previous methods that could only generate one output. To have a distribution to sample foreground from, they combined CVAE and instance blind and explained why using them directly is infeasible: CVAE learns low variance prior and instance blind is unstable. Therefore, they propose the network with two parallel training paths: 1) reconstruction path is similar as instance blind, trying to reconstruct the original image and get smooth prior distribution of missing foreground. 2) generative path predicts the latent prior distribution for the missing regions conditioned on the visible pixels. During testing, only generative model would be used to infer outputs. The network is based on LS-GAN. For the loss function, they used distribution regularization (KL divergence), appearance matching loss (for rec path, it’s used on the whole image, while for gen path, it’s used on missing foreground only), and adversarial loss. </p>
-<p>Note that they also present short+long term attention layer, a combination of self-attention layer and contextual flow. Short term attention is placed within decoder to harness distant spatial context. Long term attention is placed between encoder and decoder to capture the feature-feature context.</p>
-<h4 id="Pros"><a href="#Pros" class="headerlink" title="Pros:"></a>Pros:</h4><ol>
-<li><p>The mathematical derivation and explanation is clear and full (though I don’t understand some of them)</p>
-</li>
-<li><p>From one-to-one to multi-model/one-to-many is the trend in image-to-image translation and image inpaiting.</p>
-</li>
-<li><p>The short+long attention layer is a good way to attend to the finer-grained features in the encoder or the more semantically generative features in the decoder.</p>
-</li>
-</ol>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/15/DailyReading-20200515/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content>
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Wenyan Cong">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/05/15/DailyReading-20200515/" itemprop="url">Daily Reading 20200515</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-05-15T20:46:22+08:00">
-                2019-05-15
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Paper-Note/" itemprop="url" rel="index">
-                    <span itemprop="name">Paper Note</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="Multimodal-Unsupervised-Image-to-Image-Translation"><a href="#Multimodal-Unsupervised-Image-to-Image-Translation" class="headerlink" title="Multimodal Unsupervised Image-to-Image Translation"></a>Multimodal Unsupervised Image-to-Image Translation</h3><p>posted on: CVPR2019</p>
-<p>This work is the first exemplar-based video colorization algorithm which is like ‘Deep Exemplar-based Colorization’ except that it is extended to video. It adopts a recurrent structure and also contains two major sub-nets: correspondence subnet and colorization subnet. Compared to image colorization, they must consider temporal consistency besides the color and semantic correspondence. And that’s why they adopt a recurrent structure and take the result of previous frame as input. The loss function is also similar. Besides the perceptual loss and smoothness loss used in [1], they also introduced contextual loss and used adversarial loss and the temporal consistency loss. The contextual loss measures the local feature similarity between the output frame and the reference in a forward matching way. In addition, to degenerate to the common case that the reference comes from the video frames, they add L1 loss to make the output close to the ground truth. They compare to image colorization, auto video colorization and color propagation methods for quantitatively comparison. And they conducted user study for qualitatively comparison.</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/14/DailyReading-20200514/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content>
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Wenyan Cong">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/05/14/DailyReading-20200514/" itemprop="url">Daily Reading 20200514</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-05-14T20:46:22+08:00">
-                2019-05-14
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Paper-Note/" itemprop="url" rel="index">
-                    <span itemprop="name">Paper Note</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="Multimodal-Unsupervised-Image-to-Image-Translation"><a href="#Multimodal-Unsupervised-Image-to-Image-Translation" class="headerlink" title="Multimodal Unsupervised Image-to-Image Translation"></a>Multimodal Unsupervised Image-to-Image Translation</h3><p>posted on: ECCV2018</p>
-<p>Image-to-image translation is simplified to the problem as a deterministic one-to-one mapping, which makes it difficult to generate diverse outputs from a given source domain image. To address this problem, they extend their previous work UNIT(one-to-one mapping) to multi-model task by combining to BicycleGAN. The image representation is decomposed into a content code that is domain-invariant, and a style code that captures domain-specific properties. To perform translation, they recombine its content code with a random style code sampled from the style space of the target domain. Based on the content code and style code, they propose bidirectional reconstruction loss, including image reconstruction (after encoding to two codes, decodes the original image) and latent reconstruction (same content code as input and same style code as the style). Besides user study, they also use metrics LPIPS and CIS (a modified version of IS).</p>
-<h4 id="Pros"><a href="#Pros" class="headerlink" title="Pros:"></a>Pros:</h4><ol>
-<li><p>From 1-to-1 to 1-to-many, the image-to-image translation task is more clear and reasonable.</p>
-</li>
-<li><p>Their assumption of style code and content code is a proper abstract of image-to-image. It is using such an assumption to solve a more challenging problem.</p>
-</li>
-</ol>
-<h4 id="Cons"><a href="#Cons" class="headerlink" title="Cons:"></a>Cons:</h4><ol>
-<li>In another paper, they mention that the style code lack many details and is not such beneficial to image-to-image translation?</li>
-</ol>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/13/DailyReading-20200513/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content>
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Wenyan Cong">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/05/13/DailyReading-20200513/" itemprop="url">Daily Reading 20200513</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-05-13T20:46:22+08:00">
-                2019-05-13
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Paper-Note/" itemprop="url" rel="index">
-                    <span itemprop="name">Paper Note</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="Example-Guided-Style-Consistent-Image-Synthesis-from-Semantic-Labeling"><a href="#Example-Guided-Style-Consistent-Image-Synthesis-from-Semantic-Labeling" class="headerlink" title="Example-Guided Style-Consistent Image Synthesis from Semantic Labeling"></a>Example-Guided Style-Consistent Image Synthesis from Semantic Labeling</h3><p>posted on: CVPR2019</p>
-<p>In this paper, they present a method for example guided image synthesis with style-consistency from general-form semantic labels. They mainly focus on face, dance and street view image synthesis tasks. Based on pix2pixHD, their network contains 1) a generator, with semantic map x, style example I and its corresponding label F(I) as input and output a synthetic image; 2) a standard discriminator to distinguish real images from fake ones given conditional inputs; and 3) a style consistency discriminator to detect whether the synthetic output and the guidance image I are style-compatible, which operates on image pairs. During network training, they propose to sample style-consistent and style-inconsistent image pairs from video to provide style awareness to the model. They also introduce the style consistency adversarial losses as well as the semantic consistency loss with adaptive weights to produce plausible results. They perform qualitative and quantitative comparison in several applications.</p>
-<h4 id="Pros"><a href="#Pros" class="headerlink" title="Pros:"></a>Pros:</h4><ol>
-<li>In the past, image-to-image synthesis is difficult to tell whether the network has learned a new data distribution. The style image of this article gives different data distribution types, so this network can output different data distributions.</li>
-</ol>
-<h4 id="Cons"><a href="#Cons" class="headerlink" title="Cons:"></a>Cons:</h4><ol>
-<li><p>Though they build their network based on pix2pixHD, they don’t apply that multi-scale architecture and limit the input size to 256*256.</p>
-</li>
-<li><p>The results could be effected significantly by the performance of the state-of-the-art semantic labeling function F (·).</p>
-</li>
-</ol>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/10/DailyReading-20200510/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content>
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Wenyan Cong">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/05/10/DailyReading-20200510/" itemprop="url">Daily Reading 20200510</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-05-10T20:46:22+08:00">
-                2019-05-10
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Paper-Note/" itemprop="url" rel="index">
-                    <span itemprop="name">Paper Note</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="Toward-Multimodal-Image-to-Image-Translation"><a href="#Toward-Multimodal-Image-to-Image-Translation" class="headerlink" title="Toward Multimodal Image-to-Image Translation"></a>Toward Multimodal Image-to-Image Translation</h3><p>posted on: NIPS2017</p>
-<p>In this paper, they mentioned that in image-to-image translation, a single input may correspond to multiple possible outputs, making it a multi-model problem. So they propose to learn the distribution of possible outputs. They propose a hybrid model BicycleGAN by combining cVAE-GAN and cLR-GAN. cVAE-GAN learns the hidden distribution of image output through VAE, and models the  multi-style output distribution. cVAE-GAN starts with ground truth target image B and encodes it into latent space. The generator then attempts to inversely map the input image A along with the sample z to the original image B. cLR-GAN starts with randomly sampled latent code and the condition generator is supposed to produce an output. When the output is used as input to the encoder, the same latent code should be returned to achieve self-consistency. cLR-GAN randomly samples the latent code from a known distribution, uses this code to map A to the output B, and then attempts to reconstruct the latent code from the output.</p>
-<p>They perform quantitative and qualitative comparison. For quantitative comparison, they measure diversity using average LPIPS distance, and realism using a real vs. fake AMT test.</p>
-<h4 id="Pros"><a href="#Pros" class="headerlink" title="Pros:"></a>Pros:</h4><ol>
-<li><p>Their method re-define the image-to-image translation problem in a multi-model way.</p>
-</li>
-<li><p>Combining multiple objectives for encouraging a bijective mapping between the latent and output spaces could address the problem of mode collapse in image generation.</p>
-</li>
-</ol>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/09/DailyReading-20200509/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content>
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Wenyan Cong">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/05/09/DailyReading-20200509/" itemprop="url">Daily Reading 20200509</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-05-09T20:46:22+08:00">
-                2019-05-09
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Paper-Note/" itemprop="url" rel="index">
-                    <span itemprop="name">Paper Note</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="Deep-Exemplar-based-Colorization"><a href="#Deep-Exemplar-based-Colorization" class="headerlink" title="Deep Exemplar-based Colorization"></a>Deep Exemplar-based Colorization</h3><p>posted on: TOG2018</p>
-<p>In this paper, they proposed the first deep learning approach for exemplar-based local colorization, which could directly select, propagate, and predict colors from an aligned reference for a gray-scale image.</p>
-<p>Their network contains two dub-nets. 1) Similarity sub-net, a preprocessing step which measures the semantic similarity between the reference to the target. Feeding two luminance channels of target and reference to gray VGG-19, they compute cosine distance between the feature maps and output a similarity map. 2) Colorization sub-net, colorization for similar/dissimilar patch/pixel pairs. Taking gray target, aligned reference with chrominance channels and the similarity map, it predicts the ab channels of target image. It contains two different branches with two different loss functions to predict plausible colorization in conditions with and without reliable reference. Chrominance loss in chrominance branch computes smooth L1 distance at each pixel to selectively propagate the correct reference colors. Perceptual loss in perceptual branch minimize the semantic difference between predicted one and target image when the reference is not reliable.</p>
-<p>To recommend good reference to the user, they also propose an image retrieve algorithm to find a proper reference for a given target. They apply both global ranking (cosine distance between feature maps from the first fully connected layer) and local ranking (cosine distance between feature maps from relu5_2 and correlation coefficient between the illuminance histograms of two local windows) to select proper candidates.</p>
-<h4 id="Pros"><a href="#Pros" class="headerlink" title="Pros:"></a>Pros:</h4><ol>
-<li><p>Instead of coloring the image with user strike or by learning from large-scale data, the methods they proposed makes a good balance between controllability from interaction and robustness from learning. </p>
-</li>
-<li><p>For references with proper semantic correspondence, it could propagate correct colors to the target. For those improper reference, they still could generate a plausible result by predict the dominant colors. So it loosen the constrain on references.</p>
-</li>
-</ol>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
-  <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
-  </nav>
-
-
-
-          </div>
-          
-
-
-          
-
-        </div>
-        
-          
-  
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
-    </div>
-  </div>
-
-  <aside id="sidebar" class="sidebar">
-    
-    <div class="sidebar-inner">
-
-      
-
-      
-
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
-        <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-            
-              <p class="site-author-name" itemprop="name"></p>
-              <p class="site-description motion-element" itemprop="description"></p>
-          </div>
-
-          <nav class="site-state motion-element">
-
-            
-              <div class="site-state-item site-state-posts">
-              
-                <a href="/archives/">
-              
-                  <span class="site-state-item-count">20</span>
-                  <span class="site-state-item-name">posts</span>
-                </a>
-              </div>
-            
-
-            
-              
-              
-              <div class="site-state-item site-state-categories">
-                <a href="/categories/index.html">
-                  <span class="site-state-item-count">3</span>
-                  <span class="site-state-item-name">categories</span>
-                </a>
-              </div>
-            
-
-            
-              
-              
-              <div class="site-state-item site-state-tags">
-                <a href="/tags/index.html">
-                  <span class="site-state-item-count">26</span>
-                  <span class="site-state-item-name">tags</span>
-                </a>
-              </div>
-            
-
-          </nav>
-
-          
-
-          
-            <div class="links-of-author motion-element">
-                
-                  <span class="links-of-author-item">
-                    <a href="https://github.com/Mia-Cong" target="_blank" title="GitHub">
-                      
-                        <i class="fa fa-fw fa-github"></i>GitHub</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="mailto:plcwyam17320@sjtu.edu.cn" target="_blank" title="E-Mail">
-                      
-                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
-                  </span>
-                
-            </div>
-          
-
-          
-          
-
-          
-          
-
-          
-
-        </div>
-      </section>
-
-      
-
-      
-
-    </div>
-  </aside>
-
-
-        
-      </div>
-    </main>
-
-    <footer id="footer" class="footer">
-      <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
-  <span class="with-love">
-    <i class="fa fa-user"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder"></span>
-
-  
-</div>
-
-
-  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
-
-
-
-  <span class="post-meta-divider">|</span>
-
-
-
-  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
-
-
-
-
-        
-
-
-
-
-
-
-
-        
-      </div>
-    </footer>
-
-    
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
-    
-
-    
-
-  </div>
-
-  
-
-<script type="text/javascript">
-  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-    window.Promise = null;
-  }
-</script>
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-  
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
-
-
-
-  
-  
-
-  
-
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
-
-
-
-  
-
-
-  
-
-
-
-
-	
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-  <script type="text/javascript">
-    // Popup Window;
-    var isfetched = false;
-    var isXml = true;
-    // Search DB path;
-    var search_path = "search.xml";
-    if (search_path.length === 0) {
-      search_path = "search.xml";
-    } else if (/json$/i.test(search_path)) {
-      isXml = false;
-    }
-    var path = "/" + search_path;
-    // monitor main search box;
-
-    var onPopupClose = function (e) {
-      $('.popup').hide();
-      $('#local-search-input').val('');
-      $('.search-result-list').remove();
-      $('#no-result').remove();
-      $(".local-search-pop-overlay").remove();
-      $('body').css('overflow', '');
-    }
-
-    function proceedsearch() {
-      $("body")
-        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
-        .css('overflow', 'hidden');
-      $('.search-popup-overlay').click(onPopupClose);
-      $('.popup').toggle();
-      var $localSearchInput = $('#local-search-input');
-      $localSearchInput.attr("autocapitalize", "none");
-      $localSearchInput.attr("autocorrect", "off");
-      $localSearchInput.focus();
-    }
-
-    // search function;
-    var searchFunc = function(path, search_id, content_id) {
-      'use strict';
-
-      // start loading animation
-      $("body")
-        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
-          '<div id="search-loading-icon">' +
-          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
-          '</div>' +
-          '</div>')
-        .css('overflow', 'hidden');
-      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
-
-      $.ajax({
-        url: path,
-        dataType: isXml ? "xml" : "json",
-        async: true,
-        success: function(res) {
-          // get the contents from search data
-          isfetched = true;
-          $('.popup').detach().appendTo('.header-inner');
-          var datas = isXml ? $("entry", res).map(function() {
-            return {
-              title: $("title", this).text(),
-              content: $("content",this).text(),
-              url: $("url" , this).text()
-            };
-          }).get() : res;
-          var input = document.getElementById(search_id);
-          var resultContent = document.getElementById(content_id);
-          var inputEventFunction = function() {
-            var searchText = input.value.trim().toLowerCase();
-            var keywords = searchText.split(/[\s\-]+/);
-            if (keywords.length > 1) {
-              keywords.push(searchText);
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const timeElem = document.querySelector('footer time');
+            if (timeElem) {
+                // Get the document's last modified date
+                const lastModified = new Date(document.lastModified);
+                // Format the date (adjust the options as needed)
+                const options = { year: 'numeric', month: 'short', day: 'numeric' };
+                timeElem.textContent = lastModified.toLocaleDateString(undefined, options);
+                timeElem.setAttribute('datetime', lastModified.toISOString());
             }
-            var resultItems = [];
-            if (searchText.length > 0) {
-              // perform local searching
-              datas.forEach(function(data) {
-                var isMatch = false;
-                var hitCount = 0;
-                var searchTextCount = 0;
-                var title = data.title.trim();
-                var titleInLowerCase = title.toLowerCase();
-                var content = data.content.trim().replace(/<[^>]+>/g,"");
-                var contentInLowerCase = content.toLowerCase();
-                var articleUrl = decodeURIComponent(data.url);
-                var indexOfTitle = [];
-                var indexOfContent = [];
-                // only match articles with not empty titles
-                if(title != '') {
-                  keywords.forEach(function(keyword) {
-                    function getIndexByWord(word, text, caseSensitive) {
-                      var wordLen = word.length;
-                      if (wordLen === 0) {
-                        return [];
-                      }
-                      var startPosition = 0, position = [], index = [];
-                      if (!caseSensitive) {
-                        text = text.toLowerCase();
-                        word = word.toLowerCase();
-                      }
-                      while ((position = text.indexOf(word, startPosition)) > -1) {
-                        index.push({position: position, word: word});
-                        startPosition = position + wordLen;
-                      }
-                      return index;
-                    }
-
-                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
-                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
-                  });
-                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
-                    isMatch = true;
-                    hitCount = indexOfTitle.length + indexOfContent.length;
-                  }
-                }
-
-                // show search results
-
-                if (isMatch) {
-                  // sort index by position of keyword
-
-                  [indexOfTitle, indexOfContent].forEach(function (index) {
-                    index.sort(function (itemLeft, itemRight) {
-                      if (itemRight.position !== itemLeft.position) {
-                        return itemRight.position - itemLeft.position;
-                      } else {
-                        return itemLeft.word.length - itemRight.word.length;
-                      }
-                    });
-                  });
-
-                  // merge hits into slices
-
-                  function mergeIntoSlice(text, start, end, index) {
-                    var item = index[index.length - 1];
-                    var position = item.position;
-                    var word = item.word;
-                    var hits = [];
-                    var searchTextCountInSlice = 0;
-                    while (position + word.length <= end && index.length != 0) {
-                      if (word === searchText) {
-                        searchTextCountInSlice++;
-                      }
-                      hits.push({position: position, length: word.length});
-                      var wordEnd = position + word.length;
-
-                      // move to next position of hit
-
-                      index.pop();
-                      while (index.length != 0) {
-                        item = index[index.length - 1];
-                        position = item.position;
-                        word = item.word;
-                        if (wordEnd > position) {
-                          index.pop();
-                        } else {
-                          break;
-                        }
-                      }
-                    }
-                    searchTextCount += searchTextCountInSlice;
-                    return {
-                      hits: hits,
-                      start: start,
-                      end: end,
-                      searchTextCount: searchTextCountInSlice
-                    };
-                  }
-
-                  var slicesOfTitle = [];
-                  if (indexOfTitle.length != 0) {
-                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
-                  }
-
-                  var slicesOfContent = [];
-                  while (indexOfContent.length != 0) {
-                    var item = indexOfContent[indexOfContent.length - 1];
-                    var position = item.position;
-                    var word = item.word;
-                    // cut out 100 characters
-                    var start = position - 20;
-                    var end = position + 80;
-                    if(start < 0){
-                      start = 0;
-                    }
-                    if (end < position + word.length) {
-                      end = position + word.length;
-                    }
-                    if(end > content.length){
-                      end = content.length;
-                    }
-                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
-                  }
-
-                  // sort slices in content by search text's count and hits' count
-
-                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
-                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
-                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
-                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
-                      return sliceRight.hits.length - sliceLeft.hits.length;
-                    } else {
-                      return sliceLeft.start - sliceRight.start;
-                    }
-                  });
-
-                  // select top N slices in content
-
-                  var upperBound = parseInt('1');
-                  if (upperBound >= 0) {
-                    slicesOfContent = slicesOfContent.slice(0, upperBound);
-                  }
-
-                  // highlight title and content
-
-                  function highlightKeyword(text, slice) {
-                    var result = '';
-                    var prevEnd = slice.start;
-                    slice.hits.forEach(function (hit) {
-                      result += text.substring(prevEnd, hit.position);
-                      var end = hit.position + hit.length;
-                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
-                      prevEnd = end;
-                    });
-                    result += text.substring(prevEnd, slice.end);
-                    return result;
-                  }
-
-                  var resultItem = '';
-
-                  if (slicesOfTitle.length != 0) {
-                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
-                  } else {
-                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
-                  }
-
-                  slicesOfContent.forEach(function (slice) {
-                    resultItem += "<a href='" + articleUrl + "'>" +
-                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
-                      "...</p>" + "</a>";
-                  });
-
-                  resultItem += "</li>";
-                  resultItems.push({
-                    item: resultItem,
-                    searchTextCount: searchTextCount,
-                    hitCount: hitCount,
-                    id: resultItems.length
-                  });
-                }
-              })
-            };
-            if (keywords.length === 1 && keywords[0] === "") {
-              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
-            } else if (resultItems.length === 0) {
-              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
-            } else {
-              resultItems.sort(function (resultLeft, resultRight) {
-                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
-                  return resultRight.searchTextCount - resultLeft.searchTextCount;
-                } else if (resultLeft.hitCount !== resultRight.hitCount) {
-                  return resultRight.hitCount - resultLeft.hitCount;
-                } else {
-                  return resultRight.id - resultLeft.id;
-                }
-              });
-              var searchResultList = '<ul class=\"search-result-list\">';
-              resultItems.forEach(function (result) {
-                searchResultList += result.item;
-              })
-              searchResultList += "</ul>";
-              resultContent.innerHTML = searchResultList;
-            }
-          }
-
-          if ('auto' === 'auto') {
-            input.addEventListener('input', inputEventFunction);
-          } else {
-            $('.search-icon').click(inputEventFunction);
-            input.addEventListener('keypress', function (event) {
-              if (event.keyCode === 13) {
-                inputEventFunction();
-              }
-            });
-          }
-
-          // remove loading animation
-          $(".local-search-pop-overlay").remove();
-          $('body').css('overflow', '');
-
-          proceedsearch();
-        }
-      });
-    }
-
-    // handle and trigger popup window;
-    $('.popup-trigger').click(function(e) {
-      e.stopPropagation();
-      if (isfetched === false) {
-        searchFunc(path, 'local-search-input', 'local-search-result');
-      } else {
-        proceedsearch();
-      };
-    });
-
-    $('.popup-btn-close').click(onPopupClose);
-    $('.popup').click(function(e){
-      e.stopPropagation();
-    });
-    $(document).on('keyup', function (event) {
-      var shouldDismissSearchPopup = event.which === 27 &&
-        $('.search-popup').is(':visible');
-      if (shouldDismissSearchPopup) {
-        onPopupClose();
-      }
-    });
-  </script>
-
-
-
-
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-  
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        tex2jax: {
-          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
-          processEscapes: true,
-          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-        }
-      });
+        });
     </script>
-
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for (i=0; i < all.length; i += 1) {
-          all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-      });
-    </script>
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
-</script>
-
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Queue(function() {
-    var all = MathJax.Hub.getAllJax(), i;
-    for(i=0; i < all.length; i += 1) {
-      all[i].SourceElement().parentNode.className += ' has-jax';
-    }
-  });
-</script>
-
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js">
-</script>
-<!-- End: Injected MathJax -->
-<!-- hexo-inject:end -->
-  
-
-
-  
-
-  
 
 </body>
+
 </html>
